@@ -1,0 +1,10 @@
+/* 
+    #051932
+    #093364
+*/
+
+.alura-background-light {
+    background: linear-gradient(90deg, #093364, #051932) ;
+    border: 1px solid #167bf7;
+}
+

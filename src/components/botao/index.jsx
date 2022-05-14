@@ -1,10 +1,11 @@
 import React from 'react';
+import Botao from './Botao.module.css'
 
 class Button extends React.Component {
     render() {
         return (
-            <button>
-                Iniciar
+            <button className={Botao['btn-alura']}>
+                INICIAR
             </button>
         )
     }

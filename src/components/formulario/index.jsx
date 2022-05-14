@@ -1,14 +1,17 @@
 import React from 'react';
 import Button from '../botao'
+import FormularioStyle from './Formulario.module.css'
 
 class Formulario extends React.Component {
 
     render() {
         return (
-            <form>
+            <div className="col-md-5 mt-5">
+                <form>
                 <div>
                     <label htmlFor="estudo">Estudo</label>
                     <input 
+                        className={`form-control ${FormularioStyle['input-alura']}`}
                         id="estudo" 
                         name="estudo" 
                         type="text"
@@ -18,6 +21,7 @@ class Formulario extends React.Component {
                 <div>
                     <label htmlFor="temporizador">Tempo de estudo</label>
                     <input 
+                        className={`form-control ${FormularioStyle['input-alura']}`}
                         id="temporizador" 
                         name="temporizador" 
                         type="time" 
@@ -29,6 +33,7 @@ class Formulario extends React.Component {
                 </div>
                 <Button/>
             </form>
+            </div>
         )
     }
 

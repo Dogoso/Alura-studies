@@ -1,0 +1,11 @@
+* {
+    font-weight: bold; 
+}
+
+.item-list {
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 0px;
+    border: 1px solid #167bf7;
+    border-radius: 10px;
+    list-style: none;
+}

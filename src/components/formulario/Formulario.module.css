@@ -1,0 +1,10 @@
+* {
+    font-weight: bold;
+}
+
+.input-alura {
+    background-color: #051932 !important;
+    color: white !important;
+    border: none !important;
+    height: 45px;
+}
