@@ -8,6 +8,7 @@ class Formulario extends React.Component {
         return (
             <div className="col-md-5 mt-5">
                 <form>
+                <h1>Nova tarefa</h1>
                 <div>
                     <label htmlFor="estudo">Estudo</label>
                     <input 
@@ -31,7 +32,9 @@ class Formulario extends React.Component {
                         required 
                     />
                 </div>
-                <Button/>
+                <Button>
+                    ADICIONAR
+                </Button>
             </form>
             </div>
         )
