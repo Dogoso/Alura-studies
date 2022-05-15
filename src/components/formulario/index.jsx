@@ -4,17 +4,29 @@ import FormularioStyle from './Formulario.module.css'
 
 class Formulario extends React.Component {
 
+    state = {
+        task: '',
+        time: '00:00:00'
+    }
+
+    addTask(event) {
+        event.preventDefault()
+        console.log(this.state)
+    }
+
     render() {
         return (
-            <div className="col-md-5 mt-5">
-                <form>
+            <div className="col-12 mt-5">
+                <form onSubmit={this.addTask.bind(this)}>
                 <h1>Nova tarefa</h1>
                 <div>
                     <label htmlFor="estudo">Estudo</label>
                     <input 
                         className={`form-control ${FormularioStyle['input-alura']}`}
                         id="estudo" 
-                        name="estudo" 
+                        name="estudo"
+                        value={ this.state.task }
+                        onChange={ eventTriggered => this.setState({ task: eventTriggered.target.value })} 
                         type="text"
                         required
                     />
@@ -27,6 +39,8 @@ class Formulario extends React.Component {
                         name="temporizador" 
                         type="time" 
                         step="1"
+                        value={ this.state.time }
+                        onChange={ eventTriggered => this.setState({ time: eventTriggered.target.value }) } 
                         min="00:00:00"
                         max="23:59:59" 
                         required 
