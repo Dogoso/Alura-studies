@@ -11,6 +11,7 @@ class Formulario extends React.Component {
 
     addTask(event) {
         event.preventDefault()
+        this.props.setItens(itens => [...itens, { ...this.state }])
         console.log(this.state)
     }
 
@@ -46,7 +47,7 @@ class Formulario extends React.Component {
                         required 
                     />
                 </div>
-                <Button>
+                <Button type='submit'>
                     ADICIONAR
                 </Button>
             </form>
