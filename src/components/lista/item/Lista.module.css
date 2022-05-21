@@ -3,9 +3,22 @@
 }
 
 .item-list {
-    padding: 5px 5px 5px 5px;
+    padding: 10px;
     margin: 5px 5px 5px 0px;
     border: 1px solid #167bf7;
     border-radius: 10px;
     list-style: none;
+    cursor: pointer;
+}
+
+.selected-item {
+    background-color: #041325;
+    box-shadow: inset 2px 2px 2px 2px #000000af;
+    cursor: auto;
+}
+
+.task-done {
+    background: #a3ffbf;
+    color: #051932;
+    cursor: auto;
 }

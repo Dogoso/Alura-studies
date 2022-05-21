@@ -8,3 +8,10 @@
     border: none !important;
     height: 45px;
 }
+
+.input-alura:focus {
+    background-color: #051932 !important;
+    color: white !important;
+    border: none !important;
+    height: 45px;
+}

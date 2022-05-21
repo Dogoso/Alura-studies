@@ -1,14 +1,16 @@
 import React from 'react';
 import Botao from './Botao.module.css'
 
-class Button extends React.Component {
-    render() {
-        return (
-            <button type={this.props.type} className={`col-12 col-md-12 col-lg-5 ${Botao['btn-alura']}`}>
-                {this.props.children}
-            </button>
-        )
-    }
+const Button = ({ onClick, type, children }) => {
+    return (
+        <button 
+            className={`col-12 col-md-12 col-lg-5 ${Botao['btn-alura']}`}
+            type={type}
+            onClick={onClick}
+        >
+            {children}
+        </button>
+    )
 }
 
 export default Button;
